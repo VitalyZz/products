@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.formAdd {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #172440;
+    width: 300px;
+    margin-top: 30px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.formAdd > button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #00ff37;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    outline: none;
+}
+
+input {
+    padding: 10px 10px;
+    border: 1px solid green;
+}
+
+p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: #3e3e3e;
+    margin-right: 10px;
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+span {
+    color: #52b2ff;
+    background-color: #636363;
+    font-size: 15px;
+    font-style: italic;
+    float: left;
+    padding: 2px 5px;
+}
+.card div {
+    position: relative;
+}
+
+.card div.buttons {
+    position: static;
+}
+
+.card div:after {
+    position: absolute;
+    content: '';
+    width: 220px;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: -10px;
+}
+
+.card .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 1px 2px;
+    font-size: 19px;
+    transition: all .3s;
+    color: #000 !important;
+    border-radius: 5px;
+}
+
+a.Delete:hover {
+    color: #fff;
+    background-color: #ff6857;
+}
+
+a.Change:hover {
+    color: #fff;
+    background-color: #ff8c11;
+}
+
+a.Hide:hover {
+    color: #fff;
+    background-color: #fff407;
+}
+
+.formEdit {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 100px auto 0;
+}
+
+.formEdit > input {
+    padding: 10px 10px;
+    border: 3px solid #000000;
+    margin-bottom: 10px;
+}
+
+.formEdit > button {
+    padding: 5px 15px;
+    border: 3px solid #ff9028;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff9028;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.formEdit > button:hover {
+    padding: 5px 15px;
+    border: 3px solid #ff9028;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #ff9028;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+a.hide {
+    pointer-events: none; /* делаем ссылку некликабельной */
+    cursor: default;  /* устанавливаем курсор в виде стрелки */
+    background-color: #999; /* цвет текста для нективной ссылки */
+}
